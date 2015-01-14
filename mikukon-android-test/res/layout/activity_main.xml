@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="加载so" />
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="更新UI" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_show"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ll_ctrl"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_jni"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
